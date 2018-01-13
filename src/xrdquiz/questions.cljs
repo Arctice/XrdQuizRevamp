@@ -1,6 +1,4 @@
-(ns xrd-quiz.questions
-  (:require [clojure.string :as str]))
-
+(ns xrd-quiz.questions)
 
 (def questions
   [

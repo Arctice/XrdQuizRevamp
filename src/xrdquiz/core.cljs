@@ -1,13 +1,13 @@
 (ns xrd-quiz.core
   (:require [clojure.string :as str]
             [clojure.walk :as ah]
-            [xrd-quiz.questions :refer [questions]]))
+            [xrd-quiz.questions :refer [questions]]
+            [xrd-quiz.characters :refer [characters roster]]))
+
 (defn log [x]
   (do
     (js/console.log x)
     x))
-
-(def roster ["sol" "ky" "may"])
 
 (def profile (atom {}))
 (def answered (atom {}))
@@ -39,7 +39,6 @@
          "</a></li>"])
       (:answers question))
      )))
-
 (defn question-html [question]
   (str/join
    ["<div>"
@@ -48,7 +47,6 @@
     (answers-html question)
     "</ul>"
     "</div>"]))
-
 
 (defn answered-filter [question]
   (nil?
@@ -65,7 +63,6 @@
     (aset (js/document.getElementById "profile") "innerHTML"
           (deref profile))
     )
-  
   )
 
 (defn answer [num result value]
