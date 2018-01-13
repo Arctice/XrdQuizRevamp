@@ -28,7 +28,7 @@
           "'" (:num question) "', "
           "'" (clj->js (:result question)) "', "
           "'" (clj->js %1) "')\">"
-          "<img src=\"lol\" width=\"40px\" height=\"40px\"></img>"
+          "<img src=\"img/" (clj->js %1) ".png\" width=\"40px\" height=\"40px\"></img>"
           "</a>"
           ])
        roster)
@@ -301,7 +301,10 @@
                         (first (deref results)))]
     (str/join
      ["<p>Your result is...</p>"
-      "<h3>" (character-name (first (first sorted-results))) "!</h3>"
+      "<h3>"
+      "<div><img src=\"img/" (name (first (first sorted-results)))
+      ".png\"></img></div> "
+      (character-name (first (first sorted-results))) "!</h3>"
       "<p>Close behind...</p>"
       "<ul>"
       "<li>" (character-name (first (nth sorted-results 1))) "</li>"
@@ -317,7 +320,7 @@
           (render-questions))
     (calculate-results)
     (aset (js/document.getElementById "results") "innerHTML"
-          (if (or 1 (= 0 (count (filter answered-filter questions))))
+          (if (= 0 (count (filter answered-filter questions)))
             (render-results)
             "")
           )
