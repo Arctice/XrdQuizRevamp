@@ -26,7 +26,7 @@
      :stance :no :charge :none
      :resource-management :none :resource-type :none
      :mixups [:grapple :block-pressure] :setplay [:none] :oneplayer-game :sometimes
-     :tier :high :character-difficulty :new })
+     :tier :high :character-difficulty :beginner })
    :ky
    (map->character
     {:name "Ky Kiske" :gender :M :morals :good
@@ -36,7 +36,7 @@
      :stance :no :charge :none
      :resource-management :light :resource-type :limiting
      :mixups [:frame-traps] :setplay [:oki] :oneplayer-game :no
-     :tier :high :character-difficulty :new })
+     :tier :high :character-difficulty :beginner })
    :may
    (map->character
     {:name "May" :gender :F :morals :neutral
@@ -50,17 +50,17 @@
    :faust
    (map->character
     {:name "Faust" :gender :M :morals :neutral
-     :playstyle :special :focus [:neutral] :strengths [:tools]
+     :playstyle :specialist :focus [:neutral] :strengths [:tools]
      :zoning 1.0 :rushdown 0.0 :vortex :none
      :reversal :metered :range [:mid :long] :projectile [:limited :special]
      :stance :no :charge :none
      :resource-management :heavy :resource-type :limiting
      :mixups [:unblockable] :setplay [:neutral] :oneplayer-game :no
-     :tier :mid :character-difficulty :new })
+     :tier :mid :character-difficulty :beginner })
    :millia
    (map->character
     {:name "Millia Rage" :gender :F :morals :grey
-     :playstyle :special :focus [:mixups :neutral] :strengths [:mobility :tools]
+     :playstyle :specialist :focus [:mixups :neutral] :strengths [:mobility :tools]
      :zoning 0.0 :rushdown 1.0 :vortex :50-50s
      :reversal :metered :range [:mid :short] :projectile [:special :limited]
      :stance :no :charge :none
@@ -79,7 +79,7 @@
      :tier :mid :character-difficulty :high })
    :ino
    (map->character
-    {:name "I-No" :gender :F :morals :evil
+    {:name "I-No" :gender :F :morals :villain
      :playstyle :rewarding :focus [:mixups] :strengths [:mobility]
      :zoning 0.0 :rushdown 1.0 :vortex :50-50s
      :reversal :metered :range [:short] :projectile [:special]
@@ -90,7 +90,7 @@
    :axl
    (map->character
     {:name "Axl Low" :gender :M :morals :neutral
-     :playstyle :special :focus [:neutral :conditioning] :strengths [:all-rounder]
+     :playstyle :specialist :focus [:neutral :conditioning] :strengths [:all-rounder]
      :zoning 1.0 :rushdown 0.0 :vortex :none
      :reversal :dp :range [:mid :long] :projectile [:none]
      :stance :yes :charge :heavy
@@ -110,7 +110,7 @@
    :zato
    (map->character
     {:name "Zato=1" :gender :M :morals :neutral
-     :playstyle :special :focus [:combos :mixups] :strengths [:tools :damage]
+     :playstyle :specialist :focus [:combos :mixups] :strengths [:tools :damage]
      :zoning 0.25 :rushdown 0.75 :vortex :50-50s
      :reversal :metered :range [:all] :projectile [:special]
      :stance :yes :charge :none
@@ -149,8 +149,8 @@
      :tier :low :character-difficulty :medium })
    :bedman
    (map->character
-    {:name "Bedman" :gender :M :morals :evil
-     :playstyle :special :focus [:neutral] :strengths [:tools :mobility :defense]
+    {:name "Bedman" :gender :M :morals :villain
+     :playstyle :specialist :focus [:neutral] :strengths [:tools :mobility :defense]
      :zoning 0.25 :rushdown 0.75 :vortex :basic
      :reversal :metered :range [:all] :projectile [:standard]
      :stance :no :charge :none
@@ -166,7 +166,7 @@
      :stance :no :charge :none
      :resource-management :heavy :resource-type :meter
      :mixups [:frame-traps :block-pressure] :setplay [:oki] :oneplayer-game :sometimes
-     :tier :high :character-difficulty :new })
+     :tier :high :character-difficulty :beginner })
    :elphelt
    (map->character
     {:name "Elphelt Valentine" :gender :F :morals :good
@@ -186,17 +186,17 @@
      :stance :yes :charge :light
      :resource-management :none :resource-type :none
      :mixups [:block-pressure :crossups :high-low] :setplay [:none] :oneplayer-game :no
-     :tier :low :character-difficulty :new })
+     :tier :low :character-difficulty :beginner })
    :jacko
    (map->character
-    {:name "Jack-O Valentine" :gender :F :morals :evil
-     :playstyle :special :focus [:mixups] :strengths [:tools]
+    {:name "Jack-O Valentine" :gender :F :morals :villain
+     :playstyle :specialist :focus [:mixups] :strengths [:tools]
      :zoning 1.0 :rushdown 0.0 :vortex :none
      :reversal :dp :range [:all] :projectile [:limited]
      :stance :no :charge :none
      :resource-management :heavy :resource-type :meter
      :mixups [:block-pressure :high-low] :setplay [:neutral] :oneplayer-game :yes
-     :tier :mid :character-difficulty :new })
+     :tier :mid :character-difficulty :beginner })
    :jam
    (map->character
     {:name "Jam Kuradoberi" :gender :F :morals :neutral
@@ -210,7 +210,7 @@
    :johnny
    (map->character
     {:name "Johnny Sfondi" :gender :M :morals :good
-     :playstyle :special :focus [:combos] :strengths [:damage]
+     :playstyle :specialist :focus [:combos] :strengths [:damage]
      :zoning 0.0 :rushdown 1.0 :vortex :none
      :reversal :metered :range [:mid] :projectile [:limited]
      :stance :yes :charge :none
@@ -229,18 +229,18 @@
      :tier :low :character-difficulty :medium })
    :raven
    (map->character
-    {:name "Raven" :gender :M :morals :evil
+    {:name "Raven" :gender :M :morals :villain
      :playstyle :prepared :focus [:neutral] :strengths [:all-rounder]
      :zoning 0.5 :rushdown 0.5 :vortex :basic
      :reversal :metered :range [:all] :projectile [:standard]
      :stance :yes :charge :none
      :resource-management :none :resource-type :none
      :mixups [:grapple :high-low] :setplay [:oki] :oneplayer-game :no
-     :tier :high :character-difficulty :new })
+     :tier :high :character-difficulty :beginner })
    :dizzy
    (map->character
     {:name "Dizzy" :gender :F :morals :good
-     :playstyle :special :focus [:mixups :combos] :strengths [:tools]
+     :playstyle :specialist :focus [:mixups :combos] :strengths [:tools]
      :zoning 0.75 :rushdown 0.25 :vortex :basic
      :reversal :metered :range [:long] :projectile [:special]
      :stance :no :charge :none

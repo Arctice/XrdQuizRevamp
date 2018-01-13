@@ -39,8 +39,7 @@
    {:num "4"
     :question "Who's your favourite character in the story?"
     :answers :roster
-    :result :story-favourite
-    } 
+    :result :story-favourite} 
    {:num "5"
     :question "Which character do you think looks the best?"
     :answers :roster
@@ -99,7 +98,7 @@
     :question "When in a match, what's your primary focus or favourite thing to do?"
     :answers
     [
-     [:pressure "Keeping the pressure on my opponent."]
+     [:mixups "Keeping the pressure on my opponent."]
      [:neutral "Outmanoeuvring the foe."]
      [:conditioning "Mindgames!"]
      [:combos "Executing the right combos in the right situations."]
@@ -146,8 +145,8 @@
     :question "Pick the character resource type that sounds the most fun:"
     :answers
     [[:meter "Managing an additional meter sounds fun."]
-     [:discrete "Maybe something like ammunition, or a resource I have to manually replenish."]
-     [:no "Nothing special. I'll stick to the basic meter."]
+     [:limiting "Maybe something like ammunition, or a resource I have to manually replenish."]
+     [:none "Nothing special. I'll stick to the basic meter."]
      [:disregard"No preference."]]
     :result :resource-type}
    {:num "18"
@@ -156,8 +155,7 @@
     [
      [:dp "I need a DP/meterless reversal."]
      [:metered "Metered-only Reversals are fine in exchange for more neutral/offensive options."]
-     [:disregard "No preference."]
-]
+     [:disregard "No preference."]]
     :result :dp-preference}
    {:num "19"
     :question "Does the idea of stances or multiple movesets in the same character sound appealing?"
@@ -179,18 +177,18 @@
     :question "What is your preferred way of opening people up?"
     :answers
     [[:frame-traps "The simple Frame Trap/throw game."]
-     [:pressure-extenders "RISC/Blockstring Pressure."]
-     [:grappler "Command Grabs."]
+     [:block-pressure "RISC/Blockstring Pressure."]
+     [:grapple "Command Grabs."]
      [:high-low "The High/Low mixup."]
      [:crossups "The Left/Right mixup."]
-     [:unblockables "An Unblockable setup."]
+     [:unblockable "An Unblockable setup."]
      [:disregard "No preference."]]
     :result :mixup-preference}
    {:num "22"
     :question "Do you enjoy playing the one player game?"
     :answers 
-    [[:priority "I love getting opponent into a situation where they cannot really do anything."]
-     [:yes "I am fine with doing it sometimes, if the need arises."]
+    [[:yes "I love getting opponent into a situation where they cannot really do anything."]
+     [:sometimes "I am fine with doing it sometimes, if the need arises."]
      [:no "I would rather play a more footsies/neutral/two player game"]
      [:disregard "No preference."]]
     :result :1p-preference}
@@ -213,8 +211,8 @@
    {:num "25"
     :question "Would you like a projectile?"
     :answers
-    [[:fireball "I want at least a standard full screen horizontal moving one."]
-     [:any "As long as it controls good space it doesn't have to be full screen or horizontal moving"]
+    [[:standard "I want at least a standard full screen horizontal moving one."]
+     [:limited "As long as it controls good space it doesn't have to be full screen or horizontal moving"]
      [:special "I want a tricky, meter-only, controllable, or some kind of unique projectile people have trouble dealing with"]
      [:none "I do not need projectiles to win"]
      [:disregard "No preference."]]
