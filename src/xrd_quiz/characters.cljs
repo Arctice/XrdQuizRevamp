@@ -226,7 +226,7 @@
      :stance :no :charge :none
      :resource-management :none :resource-type :none
      :mixups [:high-low] :setplay [:oki] :oneplayer-game :no
-     :tier :medium :character-difficulty :medium })
+     :tier :mid :character-difficulty :medium })
    :raven
    (map->character
     {:name "Raven" :gender :M :morals :villain

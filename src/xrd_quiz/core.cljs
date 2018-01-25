@@ -55,20 +55,33 @@
 (defn question-html [question]
   (str/join
    ["<div>"
-    "<h2>" (:question question) "</h2>"
+    "<h2> Question " (:num question) " - " (:question question) "</h2>"
     "<ul>"
     (answers-html question)
     "</ul>"
     "</div>"]))
 
-
+(defn show-hybrid-playstyle-question [question]
+  (if (not (= "11.5" (:num question)))
+    true
+    (and
+     (case (:rushdown-preference (deref profile))
+       (:priority :yes) true false)
+     (case (:zoning-preference (deref profile))
+       (:priority :yes) true false))
+    ))
 (defn answered-filter [question]
   (nil?
    ((deref answered) (:num question))))
+(defn remaining-questions []
+  (map question-html
+        (filter
+         (every-pred
+            answered-filter
+            show-hybrid-playstyle-question)
+         questions)))
 (defn render-questions []
-  (str/join
-   (map question-html
-        (filter answered-filter questions))))
+  (str/join (remaining-questions)))
 
 
 (defn tier-value [character]
@@ -320,7 +333,7 @@
           (render-questions))
     (calculate-results)
     (aset (js/document.getElementById "results") "innerHTML"
-          (if (= 0 (count (filter answered-filter questions)))
+          (if (= 0 (count (remaining-questions)))
             (render-results)
             "")
           )
