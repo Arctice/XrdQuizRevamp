@@ -7,12 +7,11 @@
     {:main 'xrd-quiz.core
      :output-to "main.js"
      :output-dir "out"
-;     :verbose true
+     :verbose true
 ;     :source-paths ["src"]
-;     :optimizations :advanced
+     :optimizations :advanced
 ;     :pseudo-names true
-;     :closure-warnings {:check-types :warning}
-;     :externs ["externs/externs.js"]
+     :closure-warnings {:check-types :warning}
 ;     :pretty-print true
      }
 )

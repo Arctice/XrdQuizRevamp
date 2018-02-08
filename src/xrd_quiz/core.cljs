@@ -62,7 +62,7 @@
     "</div>"]))
 
 (defn show-hybrid-playstyle-question [question]
-  (if (not (= "11.5" (:num question)))
+  (if (not (= "12.5" (:num question)))
     true
     (and
      (case (:rushdown-preference (deref profile))
@@ -189,7 +189,13 @@
       :F (case gender-pref
            :only-female 2
            :female 1
-           0))))
+           0)
+      :A (case gender-pref
+           :gender-subversive 2
+           :male 1
+           :female 1
+           0)
+      )))
 (defn character-strengths-value [character]
   (if (some
        #(= (:strength-preference (deref profile)) %)
@@ -250,11 +256,20 @@
        (:setplay character))
     1 0))
 (defn charge-value [character]
-  (if
-      (=
-       (:charge-preference (deref profile))
-       (:charge character))
-    1 0))
+  (let [charge-pref (:charge-preference (deref profile))]
+    (case (:charge character)
+      :heavy (case charge-pref
+           :heavy 2
+           :light 1
+           0)
+      :light (case charge-pref
+           :light 1
+           0)
+      :none (case charge-pref
+           :none 1
+           0)
+      0
+      )))
 (defn projectile-value [character]
   (if (some
        #(= (:projectile-preference (deref profile)) %)
@@ -339,7 +354,7 @@
           )
   ))
 
-(defn answer [num result value]
+(defn ^:export answer [num result value]
   (let [result (keyword result)
         value (keyword value)]
     (swap! profile assoc result value)

@@ -26,10 +26,10 @@
      :stance :no :charge :none
      :resource-management :none :resource-type :none
      :mixups [:grapple :block-pressure] :setplay [:none] :oneplayer-game :sometimes
-     :tier :high :character-difficulty :beginner })
+     :tier :mid :character-difficulty :beginner })
    :ky
    (map->character
-    {:name "Ky Kiske" :gender :M :morals :good
+    {:name "Ky Kiske" :gender :A :morals :good
      :playstyle :prepared :focus [:neutral :conditioning] :strengths [:all-rounder]
      :zoning 0.5 :rushdown 0.5 :vortex :basic
      :reversal :dp :range [:all] :projectile [:standard]
@@ -40,7 +40,7 @@
    :may
    (map->character
     {:name "May" :gender :F :morals :neutral
-     :playstyle :prepared :focus [:combos] :strengths [:tools :mobility]
+     :playstyle :rewarding :focus [:combos] :strengths [:tools :mobility]
      :zoning 0.25 :rushdown 0.75 :vortex :basic
      :reversal :metered :range [:mid] :projectile [:limited :special]
      :stance :no :charge :heavy
@@ -66,7 +66,7 @@
      :stance :no :charge :none
      :resource-management :light :resource-type :limiting
      :mixups [:high-low] :setplay [:oki] :oneplayer-game :yes
-     :tier :high :character-difficulty :medium })
+     :tier :mid :character-difficulty :medium })
    :chipp
    (map->character
     {:name "Chipp Zanuff" :gender :M :morals :good
@@ -76,7 +76,7 @@
      :stance :no :charge :none
      :resource-management :none :resource-type :none
      :mixups [:crossups :high-low] :setplay [:none] :oneplayer-game :sometimes
-     :tier :mid :character-difficulty :high })
+     :tier :high :character-difficulty :high })
    :ino
    (map->character
     {:name "I-No" :gender :F :morals :villain
@@ -84,7 +84,7 @@
      :zoning 0.0 :rushdown 1.0 :vortex :50-50s
      :reversal :metered :range [:short] :projectile [:special]
      :stance :no :charge :none
-     :resource-management :light :resource-type :none
+     :resource-management :none :resource-type :none
      :mixups [:high-low] :setplay [:neutral] :oneplayer-game :yes
      :tier :mid :character-difficulty :high })
    :axl
@@ -93,7 +93,7 @@
      :playstyle :specialist :focus [:neutral :conditioning] :strengths [:all-rounder]
      :zoning 1.0 :rushdown 0.0 :vortex :none
      :reversal :dp :range [:mid :long] :projectile [:none]
-     :stance :yes :charge :heavy
+     :stance :no :charge :light
      :resource-management :none :resource-type :none
      :mixups [:frame-traps :block-pressure] :setplay [:none] :oneplayer-game :sometimes
      :tier :mid :character-difficulty :medium })
@@ -110,13 +110,13 @@
    :zato
    (map->character
     {:name "Zato=1" :gender :M :morals :neutral
-     :playstyle :specialist :focus [:combos :mixups] :strengths [:tools :damage]
+     :playstyle :rewarding :focus [:combos :mixups] :strengths [:tools :damage]
      :zoning 0.25 :rushdown 0.75 :vortex :50-50s
      :reversal :metered :range [:all] :projectile [:special]
      :stance :yes :charge :none
      :resource-management :heavy :resource-type :meter
      :mixups [:unblockable :grapple :block-pressure] :setplay [:neutral] :oneplayer-game :yes
-     :tier :high :character-difficulty :high })
+     :tier :mid :character-difficulty :high })
    :slayer
    (map->character
     {:name "Slayer" :gender :M :morals :grey
@@ -140,7 +140,7 @@
    :ram
    (map->character
     {:name "Ramlethal Valentine" :gender :F :morals :neutral
-     :playstyle :rewarding :focus [:mixups] :strengths [:tools]
+     :playstyle :specialist :focus [:mixups] :strengths [:tools]
      :zoning 0.25 :rushdown 0.75 :vortex :basic
      :reversal :metered :range [:mid] :projectile [:limited]
      :stance :yes :charge :none
