@@ -247,6 +247,7 @@
      :resource-management :heavy :resource-type :limiting
      :mixups [:high-low :frame-traps] :setplay [:neutral :oki] :oneplayer-game :sometimes
      :tier :mid :character-difficulty :medium })
+   :answer
    (map->character
     {:name "Answer" :gender :M :morals :neutral
      :playstyle :prepared :focus [:mixups :combos :neutral] :strengths [:tools :mobility]
@@ -256,6 +257,7 @@
      :resource-management :heavy :resource-type :limiting
      :mixups [:high-low :frame-traps] :setplay [:neutral :oki] :oneplayer-game :no
      :tier :low :character-difficulty :high })
+   :baiken
    (map->character
     {:name "Baiken" :gender :F :morals :good
      :playstyle :prepared :focus [:neutral :combos] :strengths [:tools :all-rounder]
@@ -266,3 +268,162 @@
      :mixups [:frame-traps :grapple] :setplay [:none] :oneplayer-game :no
      :tier :low :character-difficulty :beginner })
    })
+
+
+(defrecord content-links
+    [dustloop discord bits])
+
+(def character-content
+  {
+   :sol
+   (map->content-links
+    {:dustloop "http://www.dustloop.com/wiki/index.php?title=GGXRD-R2/Sol_Badguy"
+     :discord "https://discordapp.com/invite/0fnjEdA32QziBwra"
+     :bits "https://drunkardshade.com/2017/05/01/guilty-bits-xrd-sol/"
+     })
+   :ky
+   (map->content-links
+    {:dustloop "http://www.dustloop.com/wiki/index.php?title=GGXRD-R2/Ky_Kiske"
+     :discord "https://discordapp.com/invite/0u3qom4GahOTTByB"
+     :bits "https://drunkardshade.com/2017/05/02/guilty-bits-xrd-ky/"
+     })
+   :may
+   (map->content-links
+    {:dustloop "http://www.dustloop.com/wiki/index.php?title=GGXRD-R2/May"
+     :discord "https://discordapp.com/invite/0TarBXRJrjkBni3s"
+     :bits "https://drunkardshade.com/2017/05/05/guilty-bits-xrd-may/"
+     })
+   :faust
+   (map->content-links
+    {:dustloop "http://www.dustloop.com/wiki/index.php?title=GGXRD-R2/Faust"
+     :discord "https://discordapp.com/invite/0YsZMsyXsk0fki0z"
+     :bits "https://drunkardshade.com/2017/05/06/guilty-bits-xrd-faust/"
+     })
+   :millia
+   (map->content-links
+    {:dustloop "http://www.dustloop.com/wiki/index.php?title=GGXRD-R2/Millia_Rage"
+     :discord "https://discordapp.com/invite/0fzWmoA2f5VuNtid"
+     :bits "https://drunkardshade.com/2017/05/09/guilty-bits-xrd-millia/"
+     })
+   :chipp
+   (map->content-links
+    {:dustloop "http://www.dustloop.com/wiki/index.php?title=GGXRD-R2/Chipp_Zanuff"
+     :discord "https://discord.gg/0hwyckGQ2bQKtOGE"
+     :bits "https://drunkardshade.com/2017/05/08/guilty-bits-xrd-chipp/"
+     })
+   :ino
+   (map->content-links
+    {:dustloop "http://www.dustloop.com/wiki/index.php?title=GGXRD-R2/I-No"
+     :discord "https://discord.gg/0wwNU581DjmZkkdp"
+     :bits "https://drunkardshade.com/2017/05/13/guilty-bits-xrd-i-no/"
+     })
+   :axl
+   (map->content-links
+    {:dustloop "http://www.dustloop.com/wiki/index.php?title=GGXRD-R2/Axl_Low"
+     :discord "https://discord.gg/0sTNLglD2uMibgWs"
+     :bits "https://drunkardshade.com/2017/05/04/guilty-bits-xrd-axl/"
+     })
+   :venom
+   (map->content-links
+    {:dustloop "http://www.dustloop.com/wiki/index.php?title=GGXRD-R2/Venom"
+     :discord "https://discord.gg/010mtfwzqq54ecePm"
+     :bits "https://drunkardshade.com/2017/05/11/guilty-bits-xrd-venom/"
+     })
+   :zato
+   (map->content-links
+    {:dustloop "http://www.dustloop.com/wiki/index.php?title=GGXRD-R2/Zato-1"
+     :discord "https://discordapp.com/invite/0o3wPdUINR4kewtO"
+     :bits "https://drunkardshade.com/2017/05/07/guilty-bits-xrd-zato-1/"
+     })
+   :slayer
+   (map->content-links
+    {:dustloop "http://www.dustloop.com/wiki/index.php?title=GGXRD-R2/Slayer"
+     :discord "https://discord.gg/0108GJa0BJP2rV2vX"
+     :bits "https://drunkardshade.com/2017/05/12/guilty-bits-xrd-slayer/"
+     })
+   :potemkin
+   (map->content-links
+    {:dustloop "http://www.dustloop.com/wiki/index.php?title=GGXRD-R2/Potemkin"
+     :discord "https://discord.gg/010msuSsL8Ur5Nb1P"
+     :bits "https://drunkardshade.com/2017/05/03/guilty-bits-xrd-potemkin/"
+     })
+   :ram
+   (map->content-links
+    {:dustloop "http://www.dustloop.com/wiki/index.php?title=GGXRD-R2/Ramlethal_Valentine"
+     :discord "https://discord.gg/0YLh9Ml3Li1foiDc"
+     :bits "https://drunkardshade.com/2017/05/16/guilty-bits-xrd-ramlethal/"
+     })
+   :bedman
+   (map->content-links
+    {:dustloop "http://www.dustloop.com/wiki/index.php?title=GGXRD-R2/Bedman"
+     :discord "https://discord.gg/0zFfsuE4onR1bvVG"
+     :bits "https://drunkardshade.com/2017/05/15/guilty-bits-xrd-bedman/"
+     })
+   :sin
+   (map->content-links
+    {:dustloop "http://www.dustloop.com/wiki/index.php?title=GGXRD-R2/Sin_Kiske"
+     :discord "https://discord.gg/0ZcD43zJDeX7qFMx"
+     :bits "https://drunkardshade.com/2017/05/17/guilty-bits-xrd-sin/"
+     })
+   :elphelt
+   (map->content-links
+    {:dustloop "http://www.dustloop.com/wiki/index.php?title=GGXRD-R2/Elphelt_Valentine"
+     :discord "https://discord.gg/0g2PWaA3VYwX2c7Z"
+     :bits "https://drunkardshade.com/2017/05/14/guilty-bits-xrd-elphelt/"
+     })
+   :leo
+   (map->content-links
+    {:dustloop "http://www.dustloop.com/wiki/index.php?title=GGXRD-R2/Leo_Whitefang"
+     :discord "https://discord.gg/010paK4rwvO6cN3t4"
+     :bits "https://drunkardshade.com/2017/05/18/guilty-bits-xrd-leo/"
+     })
+   :jacko
+   (map->content-links
+    {:dustloop "http://www.dustloop.com/wiki/index.php?title=GGXRD-R2/Jack-O%27"
+     :discord "https://discord.gg/0XbyOuifGoWPv1G3"
+     :bits "https://drunkardshade.com/2017/05/18/guilty-bits-xrd-jack-o/"
+     })
+   :jam
+   (map->content-links
+    {:dustloop "http://www.dustloop.com/wiki/index.php?title=GGXRD-R2/Jam_Kuradoberi"
+     :discord "https://discord.gg/0vIKAGeYQhoLj8mY"
+     :bits "https://drunkardshade.com/2017/05/21/guilty-bits-xrd-jam/"
+     })
+   :johnny
+   (map->content-links
+    {:dustloop "http://www.dustloop.com/wiki/index.php?title=GGXRD-R2/Johnny"
+     :discord "https://discord.gg/0sTHJeygKh7PsSvq"
+     :bits "https://drunkardshade.com/2017/05/19/guilty-bits-xrd-johnny/"
+     })
+   :kum
+   (map->content-links
+    {:dustloop "http://www.dustloop.com/wiki/index.php?title=GGXRD-R2/Kum_Haehyun"
+     :discord "https://discord.gg/0rpeN0Gem4oCDaLm"
+     :bits "https://drunkardshade.com/2017/05/22/guilty-bits-xrd-haehyun/"
+     })
+   :raven
+   (map->content-links
+    {:dustloop "http://www.dustloop.com/wiki/index.php?title=GGXRD-R2/Raven"
+     :discord "https://discord.gg/0rflCoHYS3OFEK7h"
+     :bits "https://drunkardshade.com/2017/05/10/guilty-bits-xrd-raven/"
+     })
+   :dizzy
+   (map->content-links
+    {:dustloop "http://www.dustloop.com/wiki/index.php?title=GGXRD-R2/Dizzy"
+     :discord "https://discord.gg/010mhBiZ6iFf6edGL"
+     :bits "https://drunkardshade.com/2017/05/23/guilty-bits-xrd-dizzy/"
+     })
+   :answer
+   (map->content-links
+    {:dustloop "http://www.dustloop.com/wiki/index.php?title=GGXRD-R2/Answer"
+     :discord "https://discord.gg/BGPyACV"
+     :bits "https://drunkardshade.com/2017/05/25/guilty-bits-xrd-answer/"
+     })
+   :baiken
+   (map->content-links
+    {:dustloop "http://www.dustloop.com/wiki/index.php?title=GGXRD-R2/Baiken"
+     :discord "https://discordapp.com/invite/utnudAF"
+     :bits "https://drunkardshade.com/2017/05/25/guilty-bits-xrd-answer/"
+     })
+   }
+  )

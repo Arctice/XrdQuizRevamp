@@ -2,7 +2,7 @@
   (:require [clojure.string :as str]
             [clojure.walk :as ah]
             [xrd-quiz.questions :refer [questions]]
-            [xrd-quiz.characters :refer [characters roster]]))
+            [xrd-quiz.characters :refer [characters roster character-content]]))
 
 (defn log [x]
   (do
@@ -328,18 +328,33 @@
                         #(compare (second %2) (second %1))
                         (first (deref results)))]
     (str/join
-     ["<p>Your result is...</p>"
-      "<h3>"
-      "<div><img src=\"img/" (name (first (first sorted-results)))
-      ".png\"></img></div> "
-      (character-name (first (first sorted-results))) "!</h3>"
-      "<p>Close behind...</p>"
-      "<ul>"
-      "<li>" (character-name (first (nth sorted-results 1))) "</li>"
-      "<li>" (character-name (first (nth sorted-results 2))) "</li>"
-      "<li>" (character-name (first (nth sorted-results 3))) "</li>"
-      "</ul>"
-      ])
+     (concat
+      ["<p>Your result is...</p>"
+       "<h3>"
+       "<div><img src=\"img/" (name (first (first sorted-results)))
+       ".png\"></img></div> "
+       (character-name (first (first sorted-results))) "!</h3>"
+       "<p>Close behind...</p>"
+       "<ul>"
+       "<li>" (character-name (first (nth sorted-results 1))) "</li>"
+       "<li>" (character-name (first (nth sorted-results 2))) "</li>"
+       "<li>" (character-name (first (nth sorted-results 3))) "</li>"
+       "</ul>"
+       ]
+      ["<table>"]
+      (map
+       (fn [result]
+         (str/join
+          ["<tr><th>" (character-name (first result)) "</th>"
+           " - "
+           "<th><a href =" (:dustloop ((first result) character-content)) "> [Dustloop] </a>" "</th>"
+           "<th><a href =" (:discord ((first result) character-content)) "> [Character Discord] </a>" "</th>"
+           "<th><a href =" (:bits ((first result) character-content)) "> [Guilty Bits] </a>" "</th>"
+           "</tr>"
+           ]))
+       (take 4 sorted-results))
+      ["</table>"]
+      ))
     ))
 
 (defn render-page []

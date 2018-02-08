@@ -10,22 +10,22 @@ goog.require('cljs.core.constants');
  */
 clojure.walk.walk = (function clojure$walk$walk(inner,outer,form){
 if(cljs.core.list_QMARK_(form)){
-var G__4355 = cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.list,cljs.core.map.cljs$core$IFn$_invoke$arity$2(inner,form));
-return (outer.cljs$core$IFn$_invoke$arity$1 ? outer.cljs$core$IFn$_invoke$arity$1(G__4355) : outer.call(null,G__4355));
+var G__4372 = cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.list,cljs.core.map.cljs$core$IFn$_invoke$arity$2(inner,form));
+return (outer.cljs$core$IFn$_invoke$arity$1 ? outer.cljs$core$IFn$_invoke$arity$1(G__4372) : outer.call(null,G__4372));
 } else {
 if(cljs.core.seq_QMARK_(form)){
-var G__4356 = cljs.core.doall.cljs$core$IFn$_invoke$arity$1(cljs.core.map.cljs$core$IFn$_invoke$arity$2(inner,form));
-return (outer.cljs$core$IFn$_invoke$arity$1 ? outer.cljs$core$IFn$_invoke$arity$1(G__4356) : outer.call(null,G__4356));
+var G__4373 = cljs.core.doall.cljs$core$IFn$_invoke$arity$1(cljs.core.map.cljs$core$IFn$_invoke$arity$2(inner,form));
+return (outer.cljs$core$IFn$_invoke$arity$1 ? outer.cljs$core$IFn$_invoke$arity$1(G__4373) : outer.call(null,G__4373));
 } else {
 if(cljs.core.record_QMARK_(form)){
-var G__4357 = cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (r,x){
+var G__4374 = cljs.core.reduce.cljs$core$IFn$_invoke$arity$3((function (r,x){
 return cljs.core.conj.cljs$core$IFn$_invoke$arity$2(r,(inner.cljs$core$IFn$_invoke$arity$1 ? inner.cljs$core$IFn$_invoke$arity$1(x) : inner.call(null,x)));
 }),form,form);
-return (outer.cljs$core$IFn$_invoke$arity$1 ? outer.cljs$core$IFn$_invoke$arity$1(G__4357) : outer.call(null,G__4357));
+return (outer.cljs$core$IFn$_invoke$arity$1 ? outer.cljs$core$IFn$_invoke$arity$1(G__4374) : outer.call(null,G__4374));
 } else {
 if(cljs.core.coll_QMARK_(form)){
-var G__4358 = cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.empty(form),cljs.core.map.cljs$core$IFn$_invoke$arity$2(inner,form));
-return (outer.cljs$core$IFn$_invoke$arity$1 ? outer.cljs$core$IFn$_invoke$arity$1(G__4358) : outer.call(null,G__4358));
+var G__4375 = cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.empty(form),cljs.core.map.cljs$core$IFn$_invoke$arity$2(inner,form));
+return (outer.cljs$core$IFn$_invoke$arity$1 ? outer.cljs$core$IFn$_invoke$arity$1(G__4375) : outer.call(null,G__4375));
 } else {
 return (outer.cljs$core$IFn$_invoke$arity$1 ? outer.cljs$core$IFn$_invoke$arity$1(form) : outer.call(null,form));
 
@@ -52,10 +52,10 @@ return clojure.walk.walk(cljs.core.partial.cljs$core$IFn$_invoke$arity$2(clojure
  * Recursively transforms all map keys from strings to keywords.
  */
 clojure.walk.keywordize_keys = (function clojure$walk$keywordize_keys(m){
-var f = (function (p__4359){
-var vec__4360 = p__4359;
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__4360,(0),null);
-var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__4360,(1),null);
+var f = (function (p__4376){
+var vec__4377 = p__4376;
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__4377,(0),null);
+var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__4377,(1),null);
 if(typeof k === 'string'){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(k),v], null);
 } else {
@@ -76,10 +76,10 @@ return x;
  * Recursively transforms all map keys from keywords to strings.
  */
 clojure.walk.stringify_keys = (function clojure$walk$stringify_keys(m){
-var f = (function (p__4363){
-var vec__4364 = p__4363;
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__4364,(0),null);
-var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__4364,(1),null);
+var f = (function (p__4380){
+var vec__4381 = p__4380;
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__4381,(0),null);
+var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__4381,(1),null);
 if((k instanceof cljs.core.Keyword)){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.name(k),v], null);
 } else {
