@@ -7,7 +7,6 @@ cljs.core.cst$sym$gender = new cljs.core.Symbol(null,"gender","gender",906600800
 cljs.core.cst$sym$_AMPERSAND_ = new cljs.core.Symbol(null,"&","&",-2144855648,null);
 cljs.core.cst$kw$playstyle = new cljs.core.Keyword(null,"playstyle","playstyle",118027776);
 cljs.core.cst$sym$uuid = new cljs.core.Symbol(null,"uuid","uuid",-504564192,null);
-cljs.core.cst$sym$meta2537 = new cljs.core.Symbol(null,"meta2537","meta2537",-493987072,null);
 cljs.core.cst$kw$projectile_DASH_preference = new cljs.core.Keyword(null,"projectile-preference","projectile-preference",-1705406271);
 cljs.core.cst$sym$end = new cljs.core.Symbol(null,"end","end",1372345569,null);
 cljs.core.cst$sym$defrecord_STAR_ = new cljs.core.Symbol(null,"defrecord*","defrecord*",-1936366207,null);

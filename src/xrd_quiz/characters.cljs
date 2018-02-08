@@ -13,7 +13,7 @@
 (def roster
   ["sol" "ky" "may" "faust" "millia" "chipp" "ino" "axl" "venom" "zato"
    "slayer" "potemkin" "ram" "bedman" "sin" "elphelt" "leo" "jacko" "jam"
-   "johnny" "kum" "raven" "dizzy"])
+   "johnny" "kum" "raven" "dizzy" "answer" "baiken"])
 
 (def characters
   {
@@ -247,5 +247,22 @@
      :resource-management :heavy :resource-type :limiting
      :mixups [:high-low :frame-traps] :setplay [:neutral :oki] :oneplayer-game :sometimes
      :tier :mid :character-difficulty :medium })
-   }
-  )
+   (map->character
+    {:name "Answer" :gender :M :morals :neutral
+     :playstyle :prepared :focus [:mixups :combos :neutral] :strengths [:tools :mobility]
+     :zoning 0 :rushdown 1 :vortex :50-50s
+     :reversal :dp :range [:mid :close] :projectile [:limited]
+     :stance :yes :charge :none
+     :resource-management :heavy :resource-type :limiting
+     :mixups [:high-low :frame-traps] :setplay [:neutral :oki] :oneplayer-game :no
+     :tier :low :character-difficulty :high })
+   (map->character
+    {:name "Baiken" :gender :F :morals :good
+     :playstyle :prepared :focus [:neutral :combos] :strengths [:tools :all-rounder]
+     :zoning 0.5 :rushdown 0.5 :vortex :basic
+     :reversal :metered :range [:mid] :projectile [:special :limited]
+     :stance :yes :charge :none
+     :resource-management :none :resource-type :none
+     :mixups [:frame-traps :grapple] :setplay [:none] :oneplayer-game :no
+     :tier :low :character-difficulty :beginner })
+   })

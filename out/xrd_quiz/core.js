@@ -19,12 +19,12 @@ xrd_quiz.core.answered = cljs.core.atom.cljs$core$IFn$_invoke$arity$1(cljs.core.
 xrd_quiz.core.results = cljs.core.atom.cljs$core$IFn$_invoke$arity$1(cljs.core.PersistentArrayMap.EMPTY);
 xrd_quiz.core.answers_html = (function xrd_quiz$core$answers_html(question){
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$answers.cljs$core$IFn$_invoke$arity$1(question),cljs.core.cst$kw$roster)){
-return [cljs.core.str.cljs$core$IFn$_invoke$arity$1(clojure.string.join.cljs$core$IFn$_invoke$arity$1(cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__4369_SHARP_){
-return clojure.string.join.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 15, 5, cljs.core.PersistentVector.EMPTY_NODE, ["<a href=\"javascript:void(0)\"","onclick=\"xrd_quiz.core.answer(","'",cljs.core.cst$kw$num.cljs$core$IFn$_invoke$arity$1(question),"', ","'",cljs.core.clj__GT_js(cljs.core.cst$kw$result.cljs$core$IFn$_invoke$arity$1(question)),"', ","'",cljs.core.clj__GT_js(p1__4369_SHARP_),"')\">","<img src=\"img/",cljs.core.clj__GT_js(p1__4369_SHARP_),".png\" width=\"40px\" height=\"40px\"></img>","</a>"], null));
+return [cljs.core.str.cljs$core$IFn$_invoke$arity$1(clojure.string.join.cljs$core$IFn$_invoke$arity$1(cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__1645_SHARP_){
+return clojure.string.join.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 15, 5, cljs.core.PersistentVector.EMPTY_NODE, ["<a href=\"javascript:void(0)\"","onclick=\"xrd_quiz.core.answer(","'",cljs.core.cst$kw$num.cljs$core$IFn$_invoke$arity$1(question),"', ","'",cljs.core.clj__GT_js(cljs.core.cst$kw$result.cljs$core$IFn$_invoke$arity$1(question)),"', ","'",cljs.core.clj__GT_js(p1__1645_SHARP_),"')\">","<img src=\"img/",cljs.core.clj__GT_js(p1__1645_SHARP_),".png\" width=\"40px\" height=\"40px\"></img>","</a>"], null));
 }),xrd_quiz.characters.roster))),"<p><a href=\"javascript:void(0)\"","onclick=\"xrd_quiz.core.answer(","'",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.cst$kw$num.cljs$core$IFn$_invoke$arity$1(question)),"', ","'",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.clj__GT_js(cljs.core.cst$kw$skip)),"', ","'",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.clj__GT_js(cljs.core.cst$kw$skip)),"')\">","I want to to skip this question</a></p>"].join('');
 } else {
-return clojure.string.join.cljs$core$IFn$_invoke$arity$1(cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__4370_SHARP_){
-return clojure.string.join.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 13, 5, cljs.core.PersistentVector.EMPTY_NODE, ["<li> <a href=\"javascript:void(0)\"","onclick=\"xrd_quiz.core.answer(","'",cljs.core.cst$kw$num.cljs$core$IFn$_invoke$arity$1(question),"', ","'",cljs.core.clj__GT_js(cljs.core.cst$kw$result.cljs$core$IFn$_invoke$arity$1(question)),"', ","'",cljs.core.clj__GT_js(cljs.core.first(p1__4370_SHARP_)),"')\">",cljs.core.second(p1__4370_SHARP_),"</a></li>"], null));
+return clojure.string.join.cljs$core$IFn$_invoke$arity$1(cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__1646_SHARP_){
+return clojure.string.join.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 13, 5, cljs.core.PersistentVector.EMPTY_NODE, ["<li> <a href=\"javascript:void(0)\"","onclick=\"xrd_quiz.core.answer(","'",cljs.core.cst$kw$num.cljs$core$IFn$_invoke$arity$1(question),"', ","'",cljs.core.clj__GT_js(cljs.core.cst$kw$result.cljs$core$IFn$_invoke$arity$1(question)),"', ","'",cljs.core.clj__GT_js(cljs.core.first(p1__1646_SHARP_)),"')\">",cljs.core.second(p1__1646_SHARP_),"</a></li>"], null));
 }),cljs.core.cst$kw$answers.cljs$core$IFn$_invoke$arity$1(question)));
 }
 });
@@ -35,9 +35,9 @@ xrd_quiz.core.show_hybrid_playstyle_question = (function xrd_quiz$core$show_hybr
 if(!(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2("12.5",cljs.core.cst$kw$num.cljs$core$IFn$_invoke$arity$1(question)))){
 return true;
 } else {
-var and__3828__auto__ = (function (){var G__4372 = cljs.core.cst$kw$rushdown_DASH_preference.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile));
-var G__4372__$1 = (((G__4372 instanceof cljs.core.Keyword))?G__4372.fqn:null);
-switch (G__4372__$1) {
+var and__3828__auto__ = (function (){var G__1648 = cljs.core.cst$kw$rushdown_DASH_preference.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile));
+var G__1648__$1 = (((G__1648 instanceof cljs.core.Keyword))?G__1648.fqn:null);
+switch (G__1648__$1) {
 case "priority":
 case "yes":
 return true;
@@ -49,9 +49,9 @@ return false;
 }
 })();
 if(cljs.core.truth_(and__3828__auto__)){
-var G__4373 = cljs.core.cst$kw$zoning_DASH_preference.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile));
-var G__4373__$1 = (((G__4373 instanceof cljs.core.Keyword))?G__4373.fqn:null);
-switch (G__4373__$1) {
+var G__1649 = cljs.core.cst$kw$zoning_DASH_preference.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile));
+var G__1649__$1 = (((G__1649 instanceof cljs.core.Keyword))?G__1649.fqn:null);
+switch (G__1649__$1) {
 case "priority":
 case "yes":
 return true;
@@ -67,9 +67,9 @@ return and__3828__auto__;
 }
 });
 xrd_quiz.core.answered_filter = (function xrd_quiz$core$answered_filter(question){
-return ((function (){var G__4377 = cljs.core.cst$kw$num.cljs$core$IFn$_invoke$arity$1(question);
-var fexpr__4376 = cljs.core.deref(xrd_quiz.core.answered);
-return (fexpr__4376.cljs$core$IFn$_invoke$arity$1 ? fexpr__4376.cljs$core$IFn$_invoke$arity$1(G__4377) : fexpr__4376.call(null,G__4377));
+return ((function (){var G__1653 = cljs.core.cst$kw$num.cljs$core$IFn$_invoke$arity$1(question);
+var fexpr__1652 = cljs.core.deref(xrd_quiz.core.answered);
+return (fexpr__1652.cljs$core$IFn$_invoke$arity$1 ? fexpr__1652.cljs$core$IFn$_invoke$arity$1(G__1653) : fexpr__1652.call(null,G__1653));
 })() == null);
 });
 xrd_quiz.core.remaining_questions = (function xrd_quiz$core$remaining_questions(){
@@ -80,13 +80,13 @@ return clojure.string.join.cljs$core$IFn$_invoke$arity$1(xrd_quiz.core.remaining
 });
 xrd_quiz.core.tier_value = (function xrd_quiz$core$tier_value(character){
 var tier_answer = cljs.core.cst$kw$tier.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile));
-var G__4378 = cljs.core.cst$kw$tier.cljs$core$IFn$_invoke$arity$1(character);
-var G__4378__$1 = (((G__4378 instanceof cljs.core.Keyword))?G__4378.fqn:null);
-switch (G__4378__$1) {
+var G__1654 = cljs.core.cst$kw$tier.cljs$core$IFn$_invoke$arity$1(character);
+var G__1654__$1 = (((G__1654 instanceof cljs.core.Keyword))?G__1654.fqn:null);
+switch (G__1654__$1) {
 case "high":
-var G__4379 = tier_answer;
-var G__4379__$1 = (((G__4379 instanceof cljs.core.Keyword))?G__4379.fqn:null);
-switch (G__4379__$1) {
+var G__1655 = tier_answer;
+var G__1655__$1 = (((G__1655 instanceof cljs.core.Keyword))?G__1655.fqn:null);
+switch (G__1655__$1) {
 case "high":
 case "not-low":
 case "any":
@@ -100,9 +100,9 @@ return (0);
 
 break;
 case "mid":
-var G__4380 = tier_answer;
-var G__4380__$1 = (((G__4380 instanceof cljs.core.Keyword))?G__4380.fqn:null);
-switch (G__4380__$1) {
+var G__1656 = tier_answer;
+var G__1656__$1 = (((G__1656 instanceof cljs.core.Keyword))?G__1656.fqn:null);
+switch (G__1656__$1) {
 case "mid":
 case "not-high":
 case "not-low":
@@ -117,9 +117,9 @@ return (0);
 
 break;
 case "low":
-var G__4381 = tier_answer;
-var G__4381__$1 = (((G__4381 instanceof cljs.core.Keyword))?G__4381.fqn:null);
-switch (G__4381__$1) {
+var G__1657 = tier_answer;
+var G__1657__$1 = (((G__1657 instanceof cljs.core.Keyword))?G__1657.fqn:null);
+switch (G__1657__$1) {
 case "low":
 case "not-high":
 case "any":
@@ -137,7 +137,7 @@ return (0);
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__4378__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1654__$1)].join('')));
 
 }
 });
@@ -156,17 +156,17 @@ return (1);
 }
 });
 xrd_quiz.core.skill_requirement = (function xrd_quiz$core$skill_requirement(character){
-var G__4386 = cljs.core.cst$kw$skill_DASH_level.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile));
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$disregard,G__4386)){
+var G__1662 = cljs.core.cst$kw$skill_DASH_level.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile));
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$disregard,G__1662)){
 return (0);
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(null,G__4386)){
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(null,G__1662)){
 return (0);
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$new,G__4386)){
-var G__4387 = cljs.core.cst$kw$character_DASH_difficulty.cljs$core$IFn$_invoke$arity$1(character);
-var G__4387__$1 = (((G__4387 instanceof cljs.core.Keyword))?G__4387.fqn:null);
-switch (G__4387__$1) {
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$new,G__1662)){
+var G__1663 = cljs.core.cst$kw$character_DASH_difficulty.cljs$core$IFn$_invoke$arity$1(character);
+var G__1663__$1 = (((G__1663 instanceof cljs.core.Keyword))?G__1663.fqn:null);
+switch (G__1663__$1) {
 case "beginner":
 return (1);
 
@@ -177,14 +177,14 @@ return (0);
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__4387__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1663__$1)].join('')));
 
 }
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$intermediate,G__4386)){
-var G__4388 = cljs.core.cst$kw$character_DASH_difficulty.cljs$core$IFn$_invoke$arity$1(character);
-var G__4388__$1 = (((G__4388 instanceof cljs.core.Keyword))?G__4388.fqn:null);
-switch (G__4388__$1) {
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$intermediate,G__1662)){
+var G__1664 = cljs.core.cst$kw$character_DASH_difficulty.cljs$core$IFn$_invoke$arity$1(character);
+var G__1664__$1 = (((G__1664 instanceof cljs.core.Keyword))?G__1664.fqn:null);
+switch (G__1664__$1) {
 case "beginner":
 case "medium":
 return (1);
@@ -195,14 +195,14 @@ return (0);
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__4388__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1664__$1)].join('')));
 
 }
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$passionate,G__4386)){
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$passionate,G__1662)){
 return (1);
 } else {
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__4386)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1662)].join('')));
 
 }
 }
@@ -211,8 +211,8 @@ throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$ari
 }
 });
 xrd_quiz.core.character_favouritism = (function xrd_quiz$core$character_favouritism(character,type){
-var char_tag = (function (){var G__4391 = cljs.core.deref(xrd_quiz.core.profile);
-return (type.cljs$core$IFn$_invoke$arity$1 ? type.cljs$core$IFn$_invoke$arity$1(G__4391) : type.call(null,G__4391));
+var char_tag = (function (){var G__1667 = cljs.core.deref(xrd_quiz.core.profile);
+return (type.cljs$core$IFn$_invoke$arity$1 ? type.cljs$core$IFn$_invoke$arity$1(G__1667) : type.call(null,G__1667));
 })();
 if((char_tag == null)){
 return (0);
@@ -231,17 +231,17 @@ if(cljs.core.truth_(cljs.core.some(cljs.core.PersistentHashSet.createAsIfByAssoc
 throw (new Error("Assert failed: (some #{morals} [:good :grey :neutral :villain])"));
 }
 
-var G__4392 = cljs.core.cst$kw$character_DASH_morals.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile));
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$disregard,G__4392)){
+var G__1668 = cljs.core.cst$kw$character_DASH_morals.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile));
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$disregard,G__1668)){
 return (0);
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(null,G__4392)){
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(null,G__1668)){
 return (0);
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$good,G__4392)){
-var G__4393 = morals;
-var G__4393__$1 = (((G__4393 instanceof cljs.core.Keyword))?G__4393.fqn:null);
-switch (G__4393__$1) {
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$good,G__1668)){
+var G__1669 = morals;
+var G__1669__$1 = (((G__1669 instanceof cljs.core.Keyword))?G__1669.fqn:null);
+switch (G__1669__$1) {
 case "good":
 case "grey":
 return (1);
@@ -252,10 +252,10 @@ return (0);
 
 }
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$chaotic_DASH_good,G__4392)){
-var G__4394 = morals;
-var G__4394__$1 = (((G__4394 instanceof cljs.core.Keyword))?G__4394.fqn:null);
-switch (G__4394__$1) {
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$chaotic_DASH_good,G__1668)){
+var G__1670 = morals;
+var G__1670__$1 = (((G__1670 instanceof cljs.core.Keyword))?G__1670.fqn:null);
+switch (G__1670__$1) {
 case "grey":
 return (1);
 
@@ -265,10 +265,10 @@ return (0);
 
 }
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$white_DASH_good,G__4392)){
-var G__4395 = morals;
-var G__4395__$1 = (((G__4395 instanceof cljs.core.Keyword))?G__4395.fqn:null);
-switch (G__4395__$1) {
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$white_DASH_good,G__1668)){
+var G__1671 = morals;
+var G__1671__$1 = (((G__1671 instanceof cljs.core.Keyword))?G__1671.fqn:null);
+switch (G__1671__$1) {
 case "good":
 return (1);
 
@@ -278,10 +278,10 @@ return (0);
 
 }
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$neutral,G__4392)){
-var G__4396 = morals;
-var G__4396__$1 = (((G__4396 instanceof cljs.core.Keyword))?G__4396.fqn:null);
-switch (G__4396__$1) {
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$neutral,G__1668)){
+var G__1672 = morals;
+var G__1672__$1 = (((G__1672 instanceof cljs.core.Keyword))?G__1672.fqn:null);
+switch (G__1672__$1) {
 case "neutral":
 return (1);
 
@@ -291,10 +291,10 @@ return (0);
 
 }
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$villain,G__4392)){
-var G__4397 = morals;
-var G__4397__$1 = (((G__4397 instanceof cljs.core.Keyword))?G__4397.fqn:null);
-switch (G__4397__$1) {
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$villain,G__1668)){
+var G__1673 = morals;
+var G__1673__$1 = (((G__1673 instanceof cljs.core.Keyword))?G__1673.fqn:null);
+switch (G__1673__$1) {
 case "villain":
 return (1);
 
@@ -304,7 +304,7 @@ return (0);
 
 }
 } else {
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__4392)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1668)].join('')));
 
 }
 }
@@ -315,23 +315,23 @@ throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$ari
 }
 });
 xrd_quiz.core.zoning_value = (function xrd_quiz$core$zoning_value(character){
-return (cljs.core.cst$kw$zoning.cljs$core$IFn$_invoke$arity$1(character) * (function (){var G__4403 = cljs.core.cst$kw$zoning_DASH_preference.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile));
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$priority,G__4403)){
+return (cljs.core.cst$kw$zoning.cljs$core$IFn$_invoke$arity$1(character) * (function (){var G__1679 = cljs.core.cst$kw$zoning_DASH_preference.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile));
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$priority,G__1679)){
 return (2);
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$yes,G__4403)){
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$yes,G__1679)){
 return (1);
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$disregard,G__4403)){
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$disregard,G__1679)){
 return (0);
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(null,G__4403)){
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(null,G__1679)){
 return (0);
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$no,G__4403)){
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$no,G__1679)){
 return (-1);
 } else {
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__4403)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1679)].join('')));
 
 }
 }
@@ -341,23 +341,23 @@ throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$ari
 })());
 });
 xrd_quiz.core.rushdown_value = (function xrd_quiz$core$rushdown_value(character){
-return (cljs.core.cst$kw$rushdown.cljs$core$IFn$_invoke$arity$1(character) * (function (){var G__4404 = cljs.core.cst$kw$rushdown_DASH_preference.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile));
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$priority,G__4404)){
+return (cljs.core.cst$kw$rushdown.cljs$core$IFn$_invoke$arity$1(character) * (function (){var G__1680 = cljs.core.cst$kw$rushdown_DASH_preference.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile));
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$priority,G__1680)){
 return (2);
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$yes,G__4404)){
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$yes,G__1680)){
 return (1);
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$disregard,G__4404)){
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$disregard,G__1680)){
 return (0);
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(null,G__4404)){
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(null,G__1680)){
 return (0);
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$no,G__4404)){
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$no,G__1680)){
 return (-1);
 } else {
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__4404)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1680)].join('')));
 
 }
 }
@@ -368,20 +368,20 @@ throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$ari
 });
 xrd_quiz.core.hybrid_value = (function xrd_quiz$core$hybrid_value(character){
 if(((cljs.core.cst$kw$zoning.cljs$core$IFn$_invoke$arity$1(character) > (0))) && ((cljs.core.cst$kw$rushdown.cljs$core$IFn$_invoke$arity$1(character) > (0)))){
-var G__4405 = cljs.core.cst$kw$mixed_DASH_playstyle_DASH_preference.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile));
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$yes,G__4405)){
+var G__1681 = cljs.core.cst$kw$mixed_DASH_playstyle_DASH_preference.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile));
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$yes,G__1681)){
 return (0);
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(null,G__4405)){
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(null,G__1681)){
 return (0);
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$priority,G__4405)){
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$priority,G__1681)){
 return (1);
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$no,G__4405)){
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$no,G__1681)){
 return (-1);
 } else {
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__4405)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1681)].join('')));
 
 }
 }
@@ -392,8 +392,8 @@ return (0);
 }
 });
 xrd_quiz.core.gameplan_focus_value = (function xrd_quiz$core$gameplan_focus_value(character){
-if(cljs.core.truth_(cljs.core.some((function (p1__4406_SHARP_){
-return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$player_DASH_focus.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile)),p1__4406_SHARP_);
+if(cljs.core.truth_(cljs.core.some((function (p1__1682_SHARP_){
+return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$player_DASH_focus.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile)),p1__1682_SHARP_);
 }),cljs.core.cst$kw$focus.cljs$core$IFn$_invoke$arity$1(character)))){
 return (1);
 } else {
@@ -401,8 +401,8 @@ return (0);
 }
 });
 xrd_quiz.core.range_value = (function xrd_quiz$core$range_value(character){
-if(cljs.core.truth_(cljs.core.some((function (p1__4407_SHARP_){
-return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$range_DASH_preference.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile)),p1__4407_SHARP_);
+if(cljs.core.truth_(cljs.core.some((function (p1__1683_SHARP_){
+return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$range_DASH_preference.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile)),p1__1683_SHARP_);
 }),cljs.core.cst$kw$range.cljs$core$IFn$_invoke$arity$1(character)))){
 return (1);
 } else {
@@ -411,13 +411,13 @@ return (0);
 });
 xrd_quiz.core.gender_value = (function xrd_quiz$core$gender_value(character){
 var gender_pref = cljs.core.cst$kw$gender_DASH_preference.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile));
-var G__4408 = cljs.core.cst$kw$gender.cljs$core$IFn$_invoke$arity$1(character);
-var G__4408__$1 = (((G__4408 instanceof cljs.core.Keyword))?G__4408.fqn:null);
-switch (G__4408__$1) {
+var G__1684 = cljs.core.cst$kw$gender.cljs$core$IFn$_invoke$arity$1(character);
+var G__1684__$1 = (((G__1684 instanceof cljs.core.Keyword))?G__1684.fqn:null);
+switch (G__1684__$1) {
 case "M":
-var G__4409 = gender_pref;
-var G__4409__$1 = (((G__4409 instanceof cljs.core.Keyword))?G__4409.fqn:null);
-switch (G__4409__$1) {
+var G__1685 = gender_pref;
+var G__1685__$1 = (((G__1685 instanceof cljs.core.Keyword))?G__1685.fqn:null);
+switch (G__1685__$1) {
 case "only-male":
 return (2);
 
@@ -433,9 +433,9 @@ return (0);
 
 break;
 case "F":
-var G__4410 = gender_pref;
-var G__4410__$1 = (((G__4410 instanceof cljs.core.Keyword))?G__4410.fqn:null);
-switch (G__4410__$1) {
+var G__1686 = gender_pref;
+var G__1686__$1 = (((G__1686 instanceof cljs.core.Keyword))?G__1686.fqn:null);
+switch (G__1686__$1) {
 case "only-female":
 return (2);
 
@@ -451,9 +451,9 @@ return (0);
 
 break;
 case "A":
-var G__4411 = gender_pref;
-var G__4411__$1 = (((G__4411 instanceof cljs.core.Keyword))?G__4411.fqn:null);
-switch (G__4411__$1) {
+var G__1687 = gender_pref;
+var G__1687__$1 = (((G__1687 instanceof cljs.core.Keyword))?G__1687.fqn:null);
+switch (G__1687__$1) {
 case "gender-subversive":
 return (2);
 
@@ -473,13 +473,13 @@ return (0);
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__4408__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1684__$1)].join('')));
 
 }
 });
 xrd_quiz.core.character_strengths_value = (function xrd_quiz$core$character_strengths_value(character){
-if(cljs.core.truth_(cljs.core.some((function (p1__4416_SHARP_){
-return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$strength_DASH_preference.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile)),p1__4416_SHARP_);
+if(cljs.core.truth_(cljs.core.some((function (p1__1692_SHARP_){
+return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$strength_DASH_preference.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile)),p1__1692_SHARP_);
 }),cljs.core.cst$kw$strengths.cljs$core$IFn$_invoke$arity$1(character)))){
 return (1);
 } else {
@@ -493,17 +493,17 @@ if(cljs.core.truth_(cljs.core.some(cljs.core.PersistentHashSet.createAsIfByAssoc
 throw (new Error("Assert failed: (some #{resource-style} [:none :light :heavy])"));
 }
 
-var G__4417 = cljs.core.cst$kw$resource_DASH_preference.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile));
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$disregard,G__4417)){
+var G__1693 = cljs.core.cst$kw$resource_DASH_preference.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile));
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$disregard,G__1693)){
 return (0);
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(null,G__4417)){
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(null,G__1693)){
 return (0);
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$priority,G__4417)){
-var G__4418 = resource_style;
-var G__4418__$1 = (((G__4418 instanceof cljs.core.Keyword))?G__4418.fqn:null);
-switch (G__4418__$1) {
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$priority,G__1693)){
+var G__1694 = resource_style;
+var G__1694__$1 = (((G__1694 instanceof cljs.core.Keyword))?G__1694.fqn:null);
+switch (G__1694__$1) {
 case "heavy":
 return (1);
 
@@ -513,10 +513,10 @@ return (0);
 
 }
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$yes,G__4417)){
-var G__4419 = resource_style;
-var G__4419__$1 = (((G__4419 instanceof cljs.core.Keyword))?G__4419.fqn:null);
-switch (G__4419__$1) {
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$yes,G__1693)){
+var G__1695 = resource_style;
+var G__1695__$1 = (((G__1695 instanceof cljs.core.Keyword))?G__1695.fqn:null);
+switch (G__1695__$1) {
 case "light":
 return (1);
 
@@ -526,10 +526,10 @@ return (0);
 
 }
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$fine,G__4417)){
-var G__4420 = resource_style;
-var G__4420__$1 = (((G__4420 instanceof cljs.core.Keyword))?G__4420.fqn:null);
-switch (G__4420__$1) {
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$fine,G__1693)){
+var G__1696 = resource_style;
+var G__1696__$1 = (((G__1696 instanceof cljs.core.Keyword))?G__1696.fqn:null);
+switch (G__1696__$1) {
 case "light":
 return (1);
 
@@ -543,10 +543,10 @@ return (0);
 
 }
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$no,G__4417)){
-var G__4421 = resource_style;
-var G__4421__$1 = (((G__4421 instanceof cljs.core.Keyword))?G__4421.fqn:null);
-switch (G__4421__$1) {
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$no,G__1693)){
+var G__1697 = resource_style;
+var G__1697__$1 = (((G__1697 instanceof cljs.core.Keyword))?G__1697.fqn:null);
+switch (G__1697__$1) {
 case "none":
 return (1);
 
@@ -556,7 +556,7 @@ return (0);
 
 }
 } else {
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__4417)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1693)].join('')));
 
 }
 }
@@ -594,8 +594,8 @@ return (0);
 }
 });
 xrd_quiz.core.mixup_value = (function xrd_quiz$core$mixup_value(character){
-if(cljs.core.truth_(cljs.core.some((function (p1__4426_SHARP_){
-return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mixup_DASH_preference.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile)),p1__4426_SHARP_);
+if(cljs.core.truth_(cljs.core.some((function (p1__1702_SHARP_){
+return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$mixup_DASH_preference.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile)),p1__1702_SHARP_);
 }),cljs.core.cst$kw$mixups.cljs$core$IFn$_invoke$arity$1(character)))){
 return (1);
 } else {
@@ -610,8 +610,8 @@ return (0);
 }
 });
 xrd_quiz.core.setplay_value = (function xrd_quiz$core$setplay_value(character){
-if(cljs.core.truth_(cljs.core.some((function (p1__4427_SHARP_){
-return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$setplay_DASH_preference.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile)),p1__4427_SHARP_);
+if(cljs.core.truth_(cljs.core.some((function (p1__1703_SHARP_){
+return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$setplay_DASH_preference.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile)),p1__1703_SHARP_);
 }),cljs.core.cst$kw$setplay.cljs$core$IFn$_invoke$arity$1(character)))){
 return (1);
 } else {
@@ -620,13 +620,13 @@ return (0);
 });
 xrd_quiz.core.charge_value = (function xrd_quiz$core$charge_value(character){
 var charge_pref = cljs.core.cst$kw$charge_DASH_preference.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile));
-var G__4428 = cljs.core.cst$kw$charge.cljs$core$IFn$_invoke$arity$1(character);
-var G__4428__$1 = (((G__4428 instanceof cljs.core.Keyword))?G__4428.fqn:null);
-switch (G__4428__$1) {
+var G__1704 = cljs.core.cst$kw$charge.cljs$core$IFn$_invoke$arity$1(character);
+var G__1704__$1 = (((G__1704 instanceof cljs.core.Keyword))?G__1704.fqn:null);
+switch (G__1704__$1) {
 case "heavy":
-var G__4429 = charge_pref;
-var G__4429__$1 = (((G__4429 instanceof cljs.core.Keyword))?G__4429.fqn:null);
-switch (G__4429__$1) {
+var G__1705 = charge_pref;
+var G__1705__$1 = (((G__1705 instanceof cljs.core.Keyword))?G__1705.fqn:null);
+switch (G__1705__$1) {
 case "heavy":
 return (2);
 
@@ -642,9 +642,9 @@ return (0);
 
 break;
 case "light":
-var G__4430 = charge_pref;
-var G__4430__$1 = (((G__4430 instanceof cljs.core.Keyword))?G__4430.fqn:null);
-switch (G__4430__$1) {
+var G__1706 = charge_pref;
+var G__1706__$1 = (((G__1706 instanceof cljs.core.Keyword))?G__1706.fqn:null);
+switch (G__1706__$1) {
 case "light":
 return (1);
 
@@ -656,9 +656,9 @@ return (0);
 
 break;
 case "none":
-var G__4431 = charge_pref;
-var G__4431__$1 = (((G__4431 instanceof cljs.core.Keyword))?G__4431.fqn:null);
-switch (G__4431__$1) {
+var G__1707 = charge_pref;
+var G__1707__$1 = (((G__1707 instanceof cljs.core.Keyword))?G__1707.fqn:null);
+switch (G__1707__$1) {
 case "none":
 return (1);
 
@@ -675,8 +675,8 @@ return (0);
 }
 });
 xrd_quiz.core.projectile_value = (function xrd_quiz$core$projectile_value(character){
-if(cljs.core.truth_(cljs.core.some((function (p1__4436_SHARP_){
-return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$projectile_DASH_preference.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile)),p1__4436_SHARP_);
+if(cljs.core.truth_(cljs.core.some((function (p1__1712_SHARP_){
+return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$projectile_DASH_preference.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(xrd_quiz.core.profile)),p1__1712_SHARP_);
 }),cljs.core.cst$kw$projectile.cljs$core$IFn$_invoke$arity$1(character)))){
 return (1);
 } else {
@@ -688,14 +688,14 @@ return ((((((((((((((((((((xrd_quiz.core.tier_value(character) + xrd_quiz.core.p
 });
 xrd_quiz.core.calculate_results = (function xrd_quiz$core$calculate_results(){
 return cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$2(xrd_quiz.core.results,(function (){
-return (new cljs.core.PersistentVector(null,1,(5),cljs.core.PersistentVector.EMPTY_NODE,[cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__4437_SHARP_){
-return (new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[cljs.core.first(p1__4437_SHARP_),xrd_quiz.core.evaluate_character(cljs.core.second(p1__4437_SHARP_))],null));
+return (new cljs.core.PersistentVector(null,1,(5),cljs.core.PersistentVector.EMPTY_NODE,[cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__1713_SHARP_){
+return (new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[cljs.core.first(p1__1713_SHARP_),xrd_quiz.core.evaluate_character(cljs.core.second(p1__1713_SHARP_))],null));
 }),xrd_quiz.characters.characters)],null));
 }));
 });
 xrd_quiz.core.render_results = (function xrd_quiz$core$render_results(){
-var sorted_results = cljs.core.sort.cljs$core$IFn$_invoke$arity$2((function (p1__4439_SHARP_,p2__4438_SHARP_){
-return cljs.core.compare(cljs.core.second(p2__4438_SHARP_),cljs.core.second(p1__4439_SHARP_));
+var sorted_results = cljs.core.sort.cljs$core$IFn$_invoke$arity$2((function (p1__1715_SHARP_,p2__1714_SHARP_){
+return cljs.core.compare(cljs.core.second(p2__1714_SHARP_),cljs.core.second(p1__1715_SHARP_));
 }),cljs.core.first(cljs.core.deref(xrd_quiz.core.results)));
 return clojure.string.join.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 19, 5, cljs.core.PersistentVector.EMPTY_NODE, ["<p>Your result is...</p>","<h3>","<div><img src=\"img/",cljs.core.name(cljs.core.first(cljs.core.first(sorted_results))),".png\"></img></div> ",xrd_quiz.core.character_name(cljs.core.first(cljs.core.first(sorted_results))),"!</h3>","<p>Close behind...</p>","<ul>","<li>",xrd_quiz.core.character_name(cljs.core.first(cljs.core.nth.cljs$core$IFn$_invoke$arity$2(sorted_results,(1)))),"</li>","<li>",xrd_quiz.core.character_name(cljs.core.first(cljs.core.nth.cljs$core$IFn$_invoke$arity$2(sorted_results,(2)))),"</li>","<li>",xrd_quiz.core.character_name(cljs.core.first(cljs.core.nth.cljs$core$IFn$_invoke$arity$2(sorted_results,(3)))),"</li>","</ul>"], null));
 });
